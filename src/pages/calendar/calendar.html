@@ -1,0 +1,111 @@
+<!--
+  Generated template for the CalendarPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>calendar</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+    
+    <ion-grid>
+        <ion-row>
+      <ion-col col-6>
+          <ion-item>
+              <ion-label floating>Select Month</ion-label>
+              <ion-select [(ngModel)]="month">
+                <ion-option value="January">January</ion-option>
+                <ion-option value="February">February</ion-option>
+                <ion-option value="March">March</ion-option>
+                <ion-option value="April">April</ion-option>
+                <ion-option value="May">May</ion-option>
+                <ion-option value="June">June</ion-option>
+                <ion-option value="July">July</ion-option>
+                <ion-option value="August">August</ion-option>
+                <ion-option value="September">September</ion-option>
+                <ion-option value="October">October</ion-option>
+                <ion-option value="November">November</ion-option>
+                <ion-option value="December">December</ion-option>
+              </ion-select>
+            </ion-item>
+          </ion-col> 
+          <ion-col col-6>
+                <ion-item>
+                    <ion-label floating>Select Year</ion-label>
+                    <ion-select [(ngModel)]="year">
+                      <ion-option value="2018">2018</ion-option>
+                      <ion-option value="2019">2019</ion-option>
+                      <ion-option value="2020">2020</ion-option>
+                      <ion-option value="2021">2021</ion-option>
+                      <ion-option value="2022">2022</ion-option>
+                      <ion-option value="2023">2023</ion-option>
+                      <ion-option value="2024">2024</ion-option>
+                      <ion-option value="2025">2025</ion-option>
+                      <ion-option value="2026">2026</ion-option> 
+                      <ion-option value="2027">2027</ion-option>
+                      <ion-option value="2028">2028</ion-option>
+                      <ion-option value="2029">2029</ion-option>
+                      <ion-option value="2030">2030</ion-option>
+                    </ion-select>
+                  </ion-item>
+                </ion-col>
+              </ion-row>
+      </ion-grid>
+  <div>
+     
+      
+      <img *ngIf="month=='January'" src="../../assets/imgs/p8.jpg"/>
+      <img *ngIf="month=='February'" src="../../assets/imgs/p10.jpg"/>
+      <img *ngIf="month=='March'" src="../../assets/imgs/p11.jpg"/>
+      <img *ngIf="month=='April'" src="../../assets/imgs/p4.jpg"/>
+      <img *ngIf="month=='May'" src="../../assets/imgs/p3.jpeg"/>
+      <img *ngIf="month=='June'" src="../../assets/imgs/p9.jpg"/>
+      <img *ngIf="month=='July'" src="../../assets/imgs/p6.jpg"/>
+      <img *ngIf="month=='August'" src="../../assets/imgs/p7.jpg"/>
+      <img *ngIf="month=='September'" src="../../assets/imgs/p1.jpg"/>
+      <img *ngIf="month=='October'" src="../../assets/imgs/p2.jpg"/>
+      <img *ngIf="month=='November'" src="../../assets/imgs/p5.jpg"/>
+      <img *ngIf="month=='December'" src="../../assets/imgs/p10.jpg"/>
+
+    </div>
+
+        <ion-card>
+            <ion-card-content>
+              <ion-item>
+                <ion-list>
+                <ion-icon name="md-calendar" color="primary" item-start></ion-icon>
+                <ion-badge >12/11/2018</ion-badge>
+                <br>
+                <p>School Holyday Christmas</p>
+              </ion-list> 
+                
+              </ion-item>
+          
+              </ion-card-content>
+              </ion-card>
+                     
+                <ion-card>
+               <ion-card-content>
+              <ion-item>
+                <ion-list>
+                <ion-icon name="md-calendar" color="primary" item-start></ion-icon>
+                <ion-badge >12/11/2018</ion-badge>
+                <br>
+                <p>School Holyday Christmas</p> 
+              </ion-list> 
+                
+              </ion-item>
+              
+              </ion-card-content>
+            </ion-card>
+ 
+    </ion-content>

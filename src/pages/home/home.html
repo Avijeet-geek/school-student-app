@@ -1,0 +1,111 @@
+<ion-header>
+  <ion-navbar  color="dark" >
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-icon ios="ios-bulb" md="md-bulb" style="font-size: 20px;color: yellow; float:right;padding:5px;" ></ion-icon>
+    <ion-icon ios="ios-home" md="md-home" style="font-size: 20px;color: white; float:right;padding: 5px;"></ion-icon>
+
+    <ion-title>{{schl_name}}</ion-title>
+   
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  
+
+      <div padding> 
+          <ion-grid>
+              <ion-row>
+                <ion-col col-sm-4  col-md-4 col-lg-4 col-xl-4></ion-col>
+              </ion-row>
+              <ion-row>
+                  <ion-col col-sm-4  col-md-4 col-lg-4 col-xl-4>
+                    <ion-card>
+                          <img style=" box-shadow: 0 0 7px 0px black;" src={{this.student_image}} />
+                         
+                        </ion-card>                 
+                    
+                    </ion-col>
+                </ion-row>
+                <ion-row>
+                    <ion-col col-sm-4  col-md-4 col-lg-4 col-xl-4></ion-col>
+                  </ion-row>
+                       
+            </ion-grid>
+
+            <ion-card>
+                <table>
+                  
+                    <tr>
+                      <td><b>Name:</b></td>
+                      <td>{{this.student_name}}</td>
+                    </tr>
+                    <tr>
+                        <td><b>Class:</b></td>
+                        <td>{{this.class_name}}</td>
+                      </tr>
+                      <tr>
+                          <td><b>Gender:</b></td>
+                          <td>{{this.gender}}</td>
+                        </tr>
+                        <tr>
+                            <td><b>Number:</b></td>
+                            <td>{{this.primary_number}}</td>
+                            
+                          </tr>
+                 
+               
+                  </table>
+            </ion-card>
+            <ion-card>
+              <ion-card-header>
+                  <ion-icon name="chatbubbles"></ion-icon>
+                  <p style="float: right;">sms report</p>
+              </ion-card-header>
+            </ion-card>
+          
+              <ion-card>
+                  <ion-card-header>
+                      <ion-icon name="ios-paper"></ion-icon>
+                      <p style="float: right;">Homework</p>
+                  </ion-card-header>
+                </ion-card>
+                <ion-card>
+                    <ion-card-header>
+                        <ion-icon name="md-podium"></ion-icon>
+                        <p style="float: right;">Exam</p>
+                    </ion-card-header>
+                  </ion-card>
+                  <ion-card>
+                      <ion-card-header>
+                          <ion-icon name="md-people"></ion-icon>
+                          <p style="float: right;">Attendance</p>
+                      </ion-card-header>
+                    </ion-card>
+                    <ion-card>
+                        <ion-card-header>
+                            <ion-icon name="md-cash"></ion-icon>
+                            <p style="float: right;">Fees</p>
+                        </ion-card-header>
+                      </ion-card>
+                      <ion-card>
+              <ion-card-header>
+                  <ion-icon name="md-clipboard"></ion-icon>
+                  <p style="float: right;">Routines</p>
+              </ion-card-header>
+            </ion-card>
+            <ion-fab right down>
+                <button ion-fab color="light"><ion-icon name="md-arrow-dropup"></ion-icon></button>
+                <ion-fab-list side="top">
+                  <button ion-fab><ion-icon style="color: blue;" name="logo-facebook"></ion-icon></button>
+                  <button ion-fab><ion-icon style="color: skyblue;" name="logo-twitter"></ion-icon></button>
+                 
+                  <button ion-fab><ion-icon  style="color: red;"name="logo-googleplus"></ion-icon></button>
+                </ion-fab-list>
+              </ion-fab>
+
+      </div>
+      
+  <!-- <button ion-button secondary menuToggle></button> -->
+</ion-content>

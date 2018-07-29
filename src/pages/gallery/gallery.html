@@ -1,0 +1,51 @@
+<!--
+  Generated template for the GalleryPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>gallery</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-header>
+    <ion-navbar>
+      <ion-title>
+        Image Gallery
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
+  <ion-content padding> 
+      
+     <ion-item-group *ngFor="let gallery of galleries;">
+           <div *ngFor ="let image of gallery.images; let j = index;">
+            <ion-row *ngIf="j % 4 === 0">
+                <ion-col col-3 *ngIf="j <  gallery.images.length"  (click)="openModal(gallery.images,j,image)">
+                    <img [src]="image.url"  >
+                </ion-col>
+                <ion-col col-3 *ngIf="j+1 < gallery.images.length"  (click)="openModal(gallery.images,(j+1),image)">
+                    <img [src]="image.url" >
+                </ion-col>
+                <ion-col col-3 *ngIf="j+2 < gallery.images.length"  (click)="openModal(gallery.images,(j+2),image)">
+                    <img [src]="image.url" >
+                </ion-col>
+                <ion-col col-3 *ngIf="j+3 < gallery.images.length"  (click)="openModal(gallery.images,(j+3),image)">
+                    <img [src]="image.url" >
+                </ion-col>
+              </ion-row>
+        </div>
+        
+      </ion-item-group>
+ 
+     <!-- <button ion-button full (click)="openGallery()">Open Gallery</button>  -->
+  </ion-content>  
+</ion-content>

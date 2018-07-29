@@ -1,0 +1,10 @@
+{
+    "/posts": {
+      "target": "https://hrmaster-groveus.c9users.io",
+      "secure": true,
+      "pathRewrite": {
+      "^/posts": ""
+    },
+      "changeOrigin": true
+    }
+  }

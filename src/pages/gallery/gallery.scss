@@ -1,0 +1,22 @@
+page-gallery {
+
+        [col-3]{
+            padding: 0.7px 0.7px;
+        }
+
+        [col-3]:first-child{
+            padding-left: 1px;
+        }
+
+
+        [col-3]:last-child{
+            padding-right: 1px;
+        }
+
+        img {
+            object-fit: cover;
+        }
+}
+.gallery-modal {
+    background: rgba(0, 0, 0, 0.5) !important;
+}

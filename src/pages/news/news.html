@@ -1,0 +1,29 @@
+<!--
+  Generated template for the NewsPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>news</ion-title>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  
+<div *ngFor="let y of datas;">
+ 
+<p>{{y.title}}</p>
+<p>{{y.news}}</p>
+<p>{{y.img}}</p>
+<p>{{y.date}}</p>
+<p>{{y.thumb}}</p>
+</div>
+</ion-content>
